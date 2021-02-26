@@ -1,0 +1,64 @@
+body {
+    color: black;
+    position: relative;
+    }
+
+.home-div {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color : lightgrey;
+}
+
+img {
+    width: 60%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    border-right: 1px dashed black;
+}
+
+.home-div-text {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    }
+
+h1 {
+    font-size: 42px;
+    }
+
+.home-div-sub {
+    margin: 0 25% 0 25%;
+    font-size: 20px;
+    }
+
+.metric-div {
+    font-size: 28px;
+    height: 20%;
+    margin: 10;
+    border: 2px solid black;
+    }
+
+.metric-div-met {
+    float: left;
+    margin: 0;
+    padding: 5;
+    background-color: grey;
+    color: white;
+    height: 85%;
+    width: 70%;
+    }
+
+.metric-div-val {
+    float: right;
+    padding: 5;
+    height: 85%;
+    width: 26%;
+    color: black;
+    background-color: white;
+    }
