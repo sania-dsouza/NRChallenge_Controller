@@ -86,27 +86,3 @@ def index(request):
                   {"co2emission": co2emission_all_latest, "daily_coal": daily_coal, "plant_efficiency": plant_efficiency_latest,
                    "date": date_string, "co2_reserve": co2_reserve_latest})
 
-
-# trash code
-    #CO2 emissions so far
-    # for i in range(1, minute_string + 1):
-    #     req_str = 'http://127.0.0.1:8082/co2/2021-02-25/' + str(minute_string)
-    #     resp_co2 = requests.get(req_str)
-    #     co2emission_all = round(co2emission_all + resp_co2.json().get('emission_Mt'), 3)
-    #
-    # average power plant efficiency;
-    # https://www.eia.gov/tools/faqs/faq.php?id=107&t=3#:~:text=To%20express%20the%20efficiency%20of,%2C%20the%20efficiency%20is%2045%25
-    # for i in range(1, minute_string + 1):
-    #     req_str = 'http://127.0.0.1:8082/co2/2021-02-25/' + str(minute_string) + '/hr'
-    #     minute_heat_rate_sum = minute_heat_rate_sum + requests.get(req_str).json().get('heat_rate')
-    #     minute_heat_rate_avg = minute_heat_rate_sum / minute_string
-    #
-    # calculated efficiency
-    # plant_efficiency = round(3412 * 100 / minute_heat_rate_avg, 2)
-    #
-    # get the standing value of the carbon dioxide reserve
-    # req_str = 'http://127.0.0.1:8082/co2/2021-02-25/' + str(minute_string) + '/reserve'
-    # co2_reserve = requests.get(req_str).json().get('co2_store')
-    # co2_reserve = round(co2_reserve / 1000)
-    #
-    # get the max value of the minute in the model objects
