@@ -10,7 +10,7 @@ It uses the Django framework and the default sqlite database as a data store. It
 - cd into the 'PlantEmissionController' folder: ``` cd PlantEmissionController ```
 - Install dependencies: ``` pip install ```
 - Run the project by sending information to New Relic at the same time
-  ``` NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program python manage.py runserver 4001 ```
-- View the project running at http://127.0.0.1:4001/
+  ``` NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program python manage.py runserver 8082 ```
+- View the project running at http://127.0.0.1:8082/
 This the front-end of the controller which displays cumulative emission data. The user needs to refresh the page to see this data. In the background, a service runs that pulls data from the power plant (the NRChallenge_Services aka the power plant).
 Refresh the page periodically to see updated emission data as the day progresses. 
