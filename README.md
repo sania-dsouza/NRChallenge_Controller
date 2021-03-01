@@ -1,4 +1,4 @@
-# NRChallenge_Services
+# NRChallenge_Controller
 
 ## Objective: ##
 This project is the browser app which displays cumulative information on the daily CO2 emissions and other numbers to be monitored by a non-tech person to get a high-level picture of emission data.
